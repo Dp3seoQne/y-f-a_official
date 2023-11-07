@@ -40,21 +40,21 @@ subprojects {
     }
 
     android {
-        compileSdkVersion(33)
+        compileSdkVersion(30)
 
         defaultConfig {
             minSdk = 21
-            targetSdk = 33
+            targetSdk = 30
         }
 
         compileOptions {
-            sourceCompatibility = JavaVersion.VERSION_17
-            targetCompatibility = JavaVersion.VERSION_17
+            sourceCompatibility = JavaVersion.VERSION_1_8
+            targetCompatibility = JavaVersion.VERSION_1_8
         }
 
         tasks.withType<org.jetbrains.kotlin.gradle.tasks.KotlinCompile> {
             kotlinOptions {
-                jvmTarget = "17" // Required
+                jvmTarget = "1.8" // Required
                 // Disables some unnecessary features
                 freeCompilerArgs = freeCompilerArgs +
                         "-Xno-call-assertions" +
