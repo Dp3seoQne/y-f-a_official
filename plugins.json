@@ -1,0 +1,40 @@
+[
+    {
+        "iconUrl": "",
+        "apiVersion": 1,
+        "repositoryUrl": "https://github.com/Dp3seoQne/y-f-a_official",
+        "fileSize": 10842,
+        "status": 1,
+        "language": "en",
+        "authors": [
+            "YF"
+        ],
+        "tvTypes": [
+            "Others"
+        ],
+        "version": 0,
+        "internalName": "FreeAudiobook",
+        "description": "Listen to free Audiobooks that are non copyrighted and available  in public domain.",
+        "url": "https://raw.githubusercontent.com/Dp3seoQne/y-f-a_official/builds/FreeAudiobook.cs3",
+        "name": "FreeAudiobook"
+    },
+    {
+        "iconUrl": "https://pngimg.com/uploads/youtube/youtube_PNG102349.png",
+        "apiVersion": 1,
+        "repositoryUrl": "https://github.com/Dp3seoQne/y-f-a_official",
+        "fileSize": 12888,
+        "status": 1,
+        "language": "en",
+        "authors": [
+            "YF"
+        ],
+        "tvTypes": [
+            "Movies"
+        ],
+        "version": 3,
+        "internalName": "YouTube",
+        "description": "Watch freely available movies from YouTube without any Advertisements in between videos due to API v3",
+        "url": "https://raw.githubusercontent.com/Dp3seoQne/y-f-a_official/builds/YouTube.cs3",
+        "name": "YouTube"
+    }
+]

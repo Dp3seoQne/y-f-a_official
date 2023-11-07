@@ -1,0 +1,8 @@
+{
+    "name": "YukiFlix Official Addons Extra",
+    "description": "Contains extra addons that are big to be included in App",
+    "manifestVersion": 1,
+    "pluginLists": [
+      "https://raw.githubusercontent.com/Dp3seoQne/y-f-a_official/builds/plugins.json"
+    ]
+  }
