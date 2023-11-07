@@ -9,8 +9,8 @@ import java.net.URLEncoder
 
 class YouTubeProvider : MainAPI() { // all providers must be an instance of MainAPI
     override var mainUrl = "https://y.com.sb"
-    override var name = "Invidious" // name of provider
-    override val supportedTypes = setOf(TvType.Others)
+    override var name = "YouTube" // name of provider
+    override val supportedTypes = setOf(TvType.Movie)
 
     override var lang = "en"
 
@@ -85,14 +85,14 @@ class YouTubeProvider : MainAPI() { // all providers must be an instance of Main
                 title,
                 "${provider.mainUrl}/watch?v=$videoId",
                 TvType.Movie,
-                "$videoId"
+                videoId
             ) {
                 plot = description
                 posterUrl = "${provider.mainUrl}/vi/$videoId/hqdefault.jpg"
                 recommendations = recommendedVideos.map { it.toSearchResponse(provider) }
                 actors = listOf(
                     ActorData(
-                        Actor(author, authorThumbnails.get(authorThumbnails.size - 1)?.url ?: ""),
+                        Actor(author, authorThumbnails[authorThumbnails.size - 1].url),
                         roleString = "Author"
                     )
                 )
@@ -132,6 +132,6 @@ class YouTubeProvider : MainAPI() { // all providers must be an instance of Main
     }
 
     companion object {
-        fun String.encodeUri() = URLEncoder.encode(this, "utf8")
+        fun String.encodeUri(): Any? = URLEncoder.encode(this, "utf8")
     }
 }
