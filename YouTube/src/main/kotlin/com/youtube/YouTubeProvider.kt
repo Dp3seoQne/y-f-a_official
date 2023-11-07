@@ -118,7 +118,7 @@ class YouTubeProvider : MainAPI() { // all providers must be an instance of Main
         callback(
             ExtractorLink(
                 "Invidious",
-                "Invidious",
+                "YouTube",
                 "$mainUrl/api/manifest/dash/id/$data",
                 "",
                 Qualities.Unknown.value,

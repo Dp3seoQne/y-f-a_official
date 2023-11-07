@@ -5,3 +5,4 @@ rootProject.name = "yfoaddons"
 
 // Plugins are included like this
 include(":YouTube")
+include(":FreeAudiobook")
